@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Marie Curie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(to bottom, #f9f7f0 0%, #f0f4f8 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(to right, #2c3e50, #4a6491);
+            color: white;
+            text-align: center;
+            padding: 60px 20px 40px;
+            position: relative;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.4rem;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        .main-content {
+            padding: 40px;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://upload.wikimedia.org/wikipedia/commons/c/c8/Marie_Curie_c._1920s.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #2c3e50;
+            margin: 30px 0 20px;
+            font-size: 2.2rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: #e74c3c;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #444;
+        }
+        
+        .quote {
+            background: #f8f9fa;
+            border-left: 4px solid #e74c3c;
+            padding: 25px;
+            margin: 30px 0;
+            font-style: italic;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: #2c3e50;
+        }
+        
+        .quote-author {
+            text-align: right;
+            font-size: 1.1rem;
+            font-style: normal;
+            margin-top: 15px;
+            color: #7f8c8d;
+        }
+        
+        .achievements {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .achievement-card {
+            flex: 1;
+            min-width: 250px;
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .achievement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .achievement-card h3 {
+            color: #e74c3c;
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #2c3e50;
+            color: white;
+            font-size: 1.1rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .main-content {
+                padding: 25px;
+            }
+            
+            .hero-image {
+                height: 300px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .achievement-card {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Marie Curie</h1>
+            <p class="subtitle">Pioneer of Radioactivity and First Woman to Win a Nobel Prize</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="hero-image"></div>
+            
+            <p>Marie Skłodowska Curie was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity. She was the first woman to win a Nobel Prize, the first person and only woman to win twice, and the only person to win a Nobel Prize in two different scientific fields.</p>
+            
+            <div class="quote">
+                "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less."
+                <div class="quote-author">— Marie Curie</div>
+            </div>
+            
+            <h2>Groundbreaking Achievements</h2>
+            <p>Marie Curie's work fundamentally changed our understanding of physics and chemistry. Her discoveries not only advanced scientific knowledge but also had profound implications for medicine and technology.</p>
+            
+            <div class="achievements">
+                <div class="achievement-card">
+                    <h3>Nobel Prize in Physics (1903)</h3>
+                    <p>Shared with Pierre Curie and Henri Becquerel for their work on radioactivity. This made her the first woman to receive a Nobel Prize.</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <h3>Nobel Prize in Chemistry (1911)</h3>
+                    <p>Awarded for her discovery of the elements polonium and radium, and for her techniques in isolating radioactive isotopes.</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <h3>First Female Professor at Sorbonne</h3>
+                    <p>After Pierre's tragic death, she took his position as Professor of General Physics at the Sorbonne, becoming the institution's first female professor.</p>
+                </div>
+            </div>
+            
+            <h2>Legacy and Impact</h2>
+            <p>Marie Curie's legacy extends far beyond her scientific discoveries. She broke gender barriers in science at a time when women were rarely accepted in academic circles. During World War I, she developed mobile radiography units to provide X-ray services to field hospitals, saving countless lives.</p>
+            
+            <p>Her dedication to science came at a personal cost—she ultimately died from aplastic anemia, likely caused by prolonged exposure to radiation. Despite this, she never patented her discoveries, believing that scientific knowledge should be shared freely for the benefit of humanity.</p>
+            
+            <div class="quote">
+                "I am among those who think that science has great beauty. A scientist in his laboratory is not only a technician: he is also a child placed before natural phenomena which impress him like a fairy tale."
+                <div class="quote-author">— Marie Curie</div>
+            </div>
+            
+            <h2>Why I Admire Her</h2>
+            <p>Marie Curie represents the perfect blend of intellectual brilliance and humanitarian spirit. Her relentless pursuit of knowledge, despite facing immense gender discrimination and personal hardships, continues to inspire scientists and dreamers worldwide. She proved that with dedication and passion, one can overcome any obstacle and make a lasting impact on the world.</p>
+            
+            <p>What I admire most is her unwavering commitment to using science for the betterment of humanity. She could have become wealthy by patenting her discoveries, but instead chose to share her knowledge freely. Her life reminds us that true greatness lies not just in achievement, but in how we use our talents to serve others.</p>
+        </div>
+        
+        <footer>
+            <p>Tribute to Marie Curie (1867-1934) • A true pioneer who changed the world</p>
+        </footer>
+    </div>
+</body>
+</html>
